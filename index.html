@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,87 +7,80 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SAYNA-HTML-CSS-PROJET-FINAL</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Assets/Css/style.css">
+    <link rel="stylesheet" href="Assets/Css/style.css">
 </head>
 
 <body>
-    <header class="row align-items-center pt-2 pb-1 menuweb" style="background: var(--primary-color)">
-        <div class="col-1"><img src="./Assets/Images/group-2.svg" alt="Standing Man" style="width: 50%"></div>
-        <div class="col-md-1 fs-5"><a class="grey" href="index.html"> [Events]</a></div>
+    <header class="row align-items-center pt-2 pb-1 menuweb">
+        <div class="col-1">
+            <img class="img-fluid w-50 ms-5" src=" Assets/Images/group-2.svg" alt="Standing Man">
+        </div>
+        <div class="col-md-1 fs-5"><a class="grey " href="index.html ">[Events]</a>
+        </div>
 
         <div class="col-1 offset-6">
-            <a class="grey" href="search.html"><img src="./Assets/Icones/search_icon.svg" alt="Search icon" style="width: var(--iconesize)"> Search</a>
+            <a href="search.html"><img class="img-fluid w-25" src="Assets/Icones/search_icon.svg" alt="Search icon"> Search</a>
+        </div>
+        <div class="col-1 ">
+            <a href="about.html"><img class="img-fluid w-25" src="Assets/Icones/about_icone.svg" alt="A propos icone"> About</a>
         </div>
         <div class="col-1">
-            <a class="grey" href="about.html"><img src="./Assets/Icones/about_icone.svg" alt="A propos icone" style="width: var(--iconesize)">About</a>
+            <a href=""><img class="img-fluid w-25" src="Assets/Icones/blog_icon.svg" alt="Blog icon"> Blog</a>
         </div>
         <div class="col-1">
-            <a class="grey" href=""><img src="./Assets/Icones/blog_icon.svg" alt="Blog icon" style="width: var(--iconesize)">Blog</a>
+            <a href=""><img class="img-fluid w-25" src="Assets/Icones/more_icon.svg" alt="Hamburger icon"> More</a>
         </div>
-        <div class="col-1">
-            <a class="grey" href=""><img src="./Assets/Icones/more_icon.svg" alt="Hamburger icon" style="width: var(--iconesize)"> More</a>
-        </div>
+    </header>
 
+    <!--header du menu mobile-->
+    <header class="menumobile">
+        <div class="row align-items-center pt-2 text-center">
+            <div class="col-4 offset-2"><img class="img-fluid w-50" src="Assets/Images/group-2.svg" alt="Standing Man"></div>
+            <div class="col-4 fs-5"><a href="index.html">[Events]</a></div>
+        </div>
+        <div class="row align-items-center pb-1 text-center">
+            <div class="col-2 offset-2">
+                <a href="search.html"><img class="img-fluid w-50" src="Assets/Icones/search_icon.svg" alt="Search icon"></a>
+            </div>
+            <div class="col-2">
+                <a href="about.html"><img class="img-fluid w-50" src="Assets/Icones/about_icone.svg" alt="A propos icone"></a>
+            </div>
+            <div class="col-2">
+                <a href=""><img class="img-fluid w-50" src="Assets/Icones/blog_icon.svg" alt="Blog icon"></a>
+            </div>
+            <div class="col-2">
+                <a href=""><img class="img-fluid w-50" src="Assets/Icones/more_icon.svg" alt="Hamburger icon"></a>
+            </div>
+        </div>
     </header>
     <!--header du menu mobile-->
-    <div class="menumobile">
-        <div style="background: var(--primary-color)">
-            <div class="row align-items-center pt-2 text-center gx-0">
-                <div class="col-4 offset-2"><img src="./Assets/Images/group-2.svg" alt="Standing Man" style="width: 50%"></div>
-                <div class="col-4 fs-5"><a class="grey" href="index.html"> [Events]</a></div>
-            </div>
-            <div class="row align-items-center pb-1 text-center">
-                <div class="col-2 offset-2">
-                    <a class="grey" href="search.html"><img src="./Assets/Icones/search_icon.svg" alt="Search icon" style="width: 50%"></a>
-                </div>
-                <div class="col-2">
-                    <a class="grey" href="about.html"><img src="./Assets/Icones/about_icone.svg" alt="A propos icone" style="width: 50%"></a>
-                </div>
-                <div class="col-2">
-                    <a class="grey" href=""><img src="./Assets/Icones/blog_icon.svg" alt="Blog icon" style="width: 50%"></a>
-                </div>
-                <div class="col-2">
-                    <a class="grey" href=""><img src="./Assets/Icones/more_icon.svg" alt="Hamburger icon" style="width: 50%"></a>
-                </div>
-            </div>
 
-        </div>
-    </div>
-    <!--header du menu mobile-->
-
-
-
-
-    <div class="container-fluid backgroundphoto" style="background-image: url('./Assets/Images/group-1.jpg'); height: 50vh;background-size: 100%; background-position-y: 50%; background-repeat: no-repeat">
-
-        <div class="text-center pt-5">
-            <h1 class="title">[Events]... your gateway to connect with events around your area</h1>
-            <div class="col-md-12">
-                <div class="border-search pt-2 pb-2">
+    <div class="backgroundphoto ">
+        <div class="text-center pt-5 ">
+            <h1 class="title ">[Events]... your gateway to connect with events around your area</h1>
+            <div class="col-12">
+                <div class="border-search pt-2 pb-2 mb-5">
                     <p class="small">SEARCH EVENTS NEARBY</p>
-                    <form action="">
-                        <input type="text" placeholder="insert your location here" style="width: 85%; padding: 0.4%; border: 1px #eee;">
-                        <button type="button" class="btn btn-dark small" style="background: var(--primary-color); border: #d35649">SEARCH</button>
+                    <form action="#">
+                        <input type="text" placeholder="insert your location here">
+                        <button type="submit" class="btn btn-dark small">SEARCH</button>
                     </form>
                 </div>
-                <br><br>
-
-                <button type="button" class="btn btn-light small" style="background: rgba(238, 238, 238, 0.7);;font-weight: bold;">How it Works</button>
+                <button type="submit" class="btn btn-light fw-bold small">How it Works</button>
             </div>
-
         </div>
     </div>
 
     <div class="container pb-5 containermobile">
-        <h5 class="text-center pt-5 pb-5" style="color: var(--primary-color)">[Events] works in four simple steps.</h5>
+        <h5 class="text-center pt-5 pb-5" style="color: var(--primary-color) ">[Events] works in four simple steps.</h5>
         <div class="row text-center">
-            <div class="col"><img src="./Assets/Icones/locate_icon.svg" alt="icone de localisation" style="width: 5%;">
+            <div class="col"><img src="Assets/Icones/locate_icon.svg" alt="icone de localisation" style="width: 5%">
                 <p><b>1-Locate:</b></p>
                 <p class="small">It's simple, on [Events] homepage, enter the name of the location you want to spend some good quality time with people and click on search.
                 </p>
             </div>
 
-            <div class="col"><img src="./Assets/Icones/confirm_icon.svg" alt="confirm icone" style="width: 5%;">
+            <div class="col"><img src="Assets/Icones/confirm_icon.svg" alt="confirm icone " style="width: 5%">
                 <p><b>2-Confirm or create:</b></p>
                 <p class="small">Go to check the events nearby the location you searched for and apply for any [Events] available. Every [gathering] has a subject, that you can search for too! If no [Events] are available on the location you selected, you can create and
                     share your event.</p>
@@ -95,29 +88,27 @@
         </div>
 
         <div class="row text-center">
-            <div class="col"><img src="./Assets/Icones/go_icon.svg" alt="icone de localisation" style="width: 5%;">
+            <div class="col"><img src="Assets/Icones/go_icon.svg " alt="icone de localisation" style="width: 5%">
                 <p><b>3-Go!</b></p>
                 <p class="small">Select the [Events], wait for the scheduled day and go! Be prepared to meet new people, create new connections and have a great time!
                 </p>
             </div>
 
-            <div class="col"><img src="./Assets/Icones/haveagoodtime_icon.svg" alt="confirm icone" style="width: 5%;">
+            <div class="col"><img src="Assets/Icones/haveagoodtime_icon.svg" alt="confirm icone" style="width: 5%">
                 <p><b>4-Have a good time:</b></p>
                 <p class="small">Once you are at the [Events] location, look for the host, enjoy and have fun!</p>
             </div>
         </div>
-
-
-
     </div>
+
     <div class="container-fluid">
-        <div class="row p-3 CARD2" style="background-color: var(--primary-color)">
+        <div class="row p-3 CARD2" style="background-color: var(--primary-color) ">
             <div class="col-md-6">
                 <p class="text-white">[Events] near you</p>
                 <p class="text-white small">Every month a new you might find [Events] near you and enjoy the company with people whom you can share mutual interests</p>
-                <a href="search.html" type="submit" class="btn btn-dark xsmall" style="background: var(--light-gray); color: var(--primary-color)">Find a [Events]</a>
+                <a href="search.html" class="btn btn-dark xsmall" style="background: var(--light-gray); color: var(--primary-color)">Find a [Events]</a>
             </div>
-            <div class="col-md-6"><img class="img-fluid group-2" src="./Assets/Images/group-2.jpg" alt="Groupe d'Etudiant"></div>
+            <div class="col-md-6"><img class="img-fluid group-2" src="Assets/Images/group-2.jpg" alt="Groupe d'Etudiants"></div>
         </div>
 
         <!--section card numero 2 de la maquette mobile-->
@@ -132,11 +123,10 @@
                     <p class="text-white">[[Events] connecting you</p>
                     <a href="search.html" style="color: var(--primary-gray)">Learn more about [Events]</a>
                 </figcaption>
-                <img class="img-fluid group-4" src="./Assets/Images/group-4.jpg" alt="Campeurs">
+                <img class="img-fluid group-4" src="Assets/Images/group-4.jpg" alt="Campeurs">
             </figure>
         </div>
         <!--section card numero 2 de la maquette mobile-->
-
 
         <!--section card numero 1 de la maquette mobile-->
         <div class="row p-3 card1" style="background-color: var(--primary-color); position: relative">
@@ -150,20 +140,20 @@
                     <p class="text-white">[Events] near you</p>
                     <a href="search.html" style="color: var(--primary-color)">Find a [Events]</a>
                 </figcaption>
-                <img class="img-fluid group-4" src="./Assets/Images/group-2.jpg" alt="Groupe d'Etudiant">
+                <img class="img-fluid group-4" src="Assets/Images/group-2.jpg" alt="Groupe d'Etudiants">
             </figure>
         </div>
         <!--section card numero 1 de la maquette mobile-->
 
         <!--section card numero 3 de la maquette mobile-->
-        <div class="row p-3 card1" style="background-color: var(--primary-blue); position: relative">
+        <div class="row p-3 card1" style="background-color: var(--primary-blue); position: relative ">
             <figure>
                 <figcaption>
                     <p class="text-white">[Events] let you meet new people, share
                         <br>interests and spreading love
                         <br>[Events] spreading love</p>
                 </figcaption>
-                <img class="img-fluid group-4" src="./Assets/Images/group-3.jpg" alt="Spreading love with hands">
+                <img class="img-fluid group-4" src="Assets/Images/group-3.jpg" alt="Spreading love with hands">
             </figure>
         </div>
         <!--section card numero 3 de la maquette mobile-->
@@ -172,9 +162,9 @@
             <div class="col-md-6">
                 <p class="text-white">[Events] connecting you</p>
                 <p class="text-white small">You can create [Events] events around your area and share them with people you know and with whoever wants to connect</p>
-                <a href="search.html" type="submit" class="btn btn-dark xsmall" style="background: var(--light-gray); color: var(---primary-gray)">Learn more about [Events]</a>
+                <a href="search.html" class="btn btn-dark xsmall">Learn more about [Events]</a>
             </div>
-            <div class="col-md-6"><img class="img-fluid group-2" src="./Assets/Images/group-4.jpg" alt="Campeur"></div>
+            <div class="col-md-6"><img class="img-fluid group-2" src="Assets/Images/group-4.jpg" alt="Campeur"></div>
         </div>
 
         <div class="row p-3 CARD2" style="background-color: var(--primary-blue)">
@@ -182,115 +172,65 @@
                 <p class="text-white">[Events] spreading love</p>
                 <p class="text-white small">[Events] let you meet new people, share interests and spreading love</p>
             </div>
-            <div class="col-md-6"><img class="img-fluid group-2" src="./Assets/Images/group-3.jpg" alt="Spreading love with hands"></div>
+            <div class="col-md-6"><img class="img-fluid group-2" src="Assets/Images/group-3.jpg" alt="Spreading love with hands"></div>
         </div>
 
     </div>
 
     <div class="container-fluid bg-dark text-white pt-4 foot">
-        <div class="text-center mx-auto align-items-center mb-5 fw-bold" style="display: flex; justify-content: space-between; font-size: small; width: 60vw;">
-            <div class="row gx-0" style="border-top: 2px solid #98a5a5; border-bottom: 2px solid #98a5a5; padding: 2%;width:30vw">
-                <div class="col">HOME</div>
-                <div class="col">SEARCH</div>
-                <div class="col">ABOUT US</div>
-                <div class="col">ADVERTISE</div>
+        <div class="d-flex align-items-center text-center mx-auto mb-5 fw-bold small" style="width: 60vw">
+            <div class="row gx-0 border-links">
+                <div class="col"><a href="">HOME</a></div>
+                <div class="col"><a href="">SEARCH</a></div>
+                <div class="col"><a href="">ABOUT US</a></div>
+                <div class="col"><a href="">ADVERTISE</a></div>
             </div>
 
-            <div style="position: relative"><svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="#98a5a5" stroke-width="3" fill="none"/>
-             </svg>
-
-                <img src="./Assets/Icones/noun-map-pin-1079814.png" alt="icone de localisation" style="width: 25%;position: absolute; top: 37%; left: 39%"></div>
-            <div class="row gx-1" style="border-top: 2px solid #98a5a5; border-bottom: 2px solid #98a5a5; padding: 2%;width:30vw">
-                <div class="col">FACEBOOK</div>
-                <div class="col">TWITTER</div>
-                <div class="col">INSTAGRAM</div>
-                <div class="col">BLOG</div>
+            <div style="position: relative">
+                <svg width="100" height="100">
+                <circle cx="50" cy="50 " r="40" stroke="#98a5a5" stroke-width="3" fill="none"/>
+                </svg>
+                <img class="find-us" src="./Assets/Icones/noun-map-pin-1079814.png" alt="icone de localisation">
+            </div>
+            <div class="row gx-1 border-links">
+                <div class="col"><a href="">FACEBOOK</a></div>
+                <div class="col"><a href="">TWITTER</a></div>
+                <div class="col"><a href="">INSTAGRAM</a></div>
+                <div class="col"><a href="">BLOG</a></div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 text-center fw-bold">Suscribe<br><br>
-                <form action="">
+                <form action="#">
                     <input type="email" placeholder="insert your e-mail here">
-                    <button type="submit" class="btn btn-dark" style="background: var(--primary-gray);">Send</button>
+                    <button type="submit" class="btn btn-dark" style="background: var(--primary-gray)">Send</button>
                 </form>
-
             </div>
             <div class="col-md-3 text-center">
                 <p class="fw-bold">Contact</p>
                 <p class="small">Have a question or a suggestion?<br>
                     <a class="orange" onclick="alert('Preparation d’envoi de mail! Objet du mail: Ask Me Anything')">contact@events.com</a>
                 </p>
-
-
             </div>
             <div class="col-md-4 offset-1 text-center">
                 <p class="fw-bold">About</p>
-                <p class="small">[Events] is an online plateform that works to improve and increase social life connections when this nightmare that we are currently living in is over <a class="orange" href="about.html">learn more</a></p>
-
+                <p class="small">[Events] is an online plateform that works to improve and increase social life connections when this nightmare that we are currently living in is over <a class="orange " href="about.html ">learn more</a></p>
             </div>
         </div>
-
-
     </div>
-    <footer>
-        <div class="row mx-auto">
-            <div class="col row d-flex justify-content">
-                <div class="col">
-                    <a class="icone" href=""><img src="./Assets/Icones/facebook_icon.svg" style="width: 50%"></a>
-                </div>
-                <div class="col">
-                    <a class="icone" href=""><img src="./Assets/Icones/twitter_icon.svg" style="width: 50%"></a>
-                </div>
-                <div class="col">
-                    <a class="icone" href=""><img src="./Assets/Icones/instagram_icon.svg" style="width: 50%"></a>
-                </div>
-                <div class="col">
-                    <a class="icone" href=""><img src="./Assets/Icones/tumblr_icon.svg" style="width: 50%"></a>
-                </div>
-                <div class="col">
-                    <a class="icone" href=""><img src="./Assets/Icones/linkedin_icon.svg" style="width: 50%"></a>
-                </div>
-            </div>
-            <div class="col offset-7" style="font-size:x-small;">© 2020 [Events], Inc.All rights reserved</div>
 
+    <footer>
+        <div class="footer-icone">
+            <div class="social-media ">
+                <a class="icone" href=""><img src="Assets/Icones/facebook_icon.svg" alt="facebook icone" style="width: 50%"></a>
+                <a class="icone" href=""><img src="Assets/Icones/twitter_icon.svg" style="width: 50%" alt="twitter icone"></a>
+                <a class="icone" href=""><img src="Assets/Icones/instagram_icon.svg" style="width: 50%" alt="instagram icone"></a>
+                <a class="icone" href=""><img src="Assets/Icones/tumblr_icon.svg" style="width: 50%" alt="tumblr icone"></a>
+                <a class="icone" href=""><img src="Assets/Icones/linkedin_icon.svg" style="width: 50%" alt="linkedin icone"></a>
+            </div>
+            <div class="copyright ">© 2020 [Events], Inc.All rights reserved</div>
         </div>
     </footer>
-
-    <section class="footermobile pt-2 pb-4" style="background: var(--gray-footer-btn)">
-        <div class="row text-center">
-            <div class="col-2">
-                <a class="icone" href=""><img src="./Assets/Icones/facebook_icon.svg" style="width: 40%"></a>
-            </div>
-            <div class="col-2">
-                <a class="icone" href=""><img src="./Assets/Icones/twitter_icon.svg" style="width: 40%"></a>
-            </div>
-            <div class="col-2">
-                <a class="icone" href=""><img src="./Assets/Icones/instagram_icon.svg" style="width: 40%"></a>
-            </div>
-            <div class="col-4 offset-2">© 2020 [Events], Inc.All rights reserved</div>
-
-        </div>
-        <div class="row" style="margin-left: 3%">
-
-
-            <div class="col-1">
-                <a class="icone" href=""><img src="./Assets/Icones/tumblr_icon.svg " style="width: 100% "></a>
-            </div>
-            <div class="col-1 offset-1">
-                <a class="icone" href=""><img src="./Assets/Icones/linkedin_icon.svg " style="width: 100% "></a>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-
-
-
-
 
 </body>
 
